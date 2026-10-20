@@ -1,0 +1,10 @@
+config/sigetec.properties
+.env
+*.log
+# NetBeans y Maven
+/target/
+/nbproject/private/
+/.idea/
+*.class
+# Copia duplicada del proyecto
+/SIGETEC_TP3_COMPLETO/

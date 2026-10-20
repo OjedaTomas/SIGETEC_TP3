@@ -1,0 +1,12 @@
+digraph arq {
+  graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.32", ranksep="0.42"];
+  node [shape=box, style="rounded,filled", fillcolor="#e8f5ee", color="#35805d", fontname="Arial", fontsize=12, margin="0.18,0.12"];
+  edge [color="#35805d", arrowsize=0.8, penwidth=1.5, fontname="Arial"];
+  ui [label="INTERFAZ DE CONSOLA\nMain.java (menú, while, switch, validación de entradas)"];
+  service [label="LÓGICA DE NEGOCIO\nServicioSigetec.java (reglas y operaciones)"];
+  model [label="MODELO POO\nCliente / Ticket abstracto / subclases\nOrdenTrabajo / Técnico / Intervención"];
+  dao [label="PERSISTENCIA JDBC\nRepositorio.java + BaseDeDatos.java\nPreparedStatement y transacciones"];
+  db [shape=cylinder, label="MYSQL 8+\n7 tablas normalizadas / relaciones PK-FK", fillcolor="#d8eade"];
+  ui -> service -> dao -> db;
+  service -> model [style=dashed];
+}

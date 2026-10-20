@@ -1,0 +1,14 @@
+digraph poo {
+  graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.35", ranksep="0.65", splines=polyline];
+  node [shape=record, style="filled", fillcolor="#edf6f0", color="#35805d", fontname="Arial", fontsize=10];
+  ticket [label="{Ticket (abstracta)|- id: long\l- clienteId: long\l- tipo: TipoServicio\l- descripcion: String\l- prioridad: Prioridad\l|+ resumen(): String\l+ instruccionTecnica(): String abstracto\l}"];
+  cctv [label="{TicketCctv|+ instruccionTecnica(): String\l}"];
+  it [label="{TicketSoporteIt|+ instruccionTecnica(): String\l}"];
+  general [label="{TicketGeneral|+ instruccionTecnica(): String\l}"];
+  cliente [label="{Cliente|- id: long\l- nombre: String\l- telefono: String\l|+ getNombre(): String\l}"];
+  tecnico [label="{Tecnico|- id: long\l- nombre: String\l- especialidad: String\l|+ getNombre(): String\l}"];
+  orden [label="{OrdenTrabajo|- id: long\l- ticketId: long\l- estado: String\l|+ getEstado(): String\l}"];
+  edge [color="#667971", arrowhead=empty, fontname="Arial", fontsize=9];
+  cctv -> ticket; it -> ticket; general -> ticket;
+  edge [color="#667971", arrowhead=vee, style=dashed];
+}

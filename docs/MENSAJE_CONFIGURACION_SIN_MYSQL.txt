@@ -1,0 +1,2 @@
+SIGETEC - Sistema Integral de Gesti?n de Servicios T?cnicos
+CONFIGURACI?N: Falta configurar MySQL. Copi? config/sigetec.properties.ejemplo a config/sigetec.properties y complet? usuario, contrase?a y URL.

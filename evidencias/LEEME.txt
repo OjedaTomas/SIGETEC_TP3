@@ -1,0 +1,12 @@
+Colocá aquí las capturas REALES de tu ejecución en NetBeans y MySQL Workbench.
+No publiques contraseñas ni datos personales reales.
+Capturas sugeridas:
+01_inicio_conexion.png
+02_menu_principal.png
+03_alta_cliente.png
+04_ticket_cctv.png
+05_orden_programada.png
+06_intervencion_finalizada.png
+07_mysql_tablas.png
+08_mysql_consultas.png
+09_reapertura_persistencia.png

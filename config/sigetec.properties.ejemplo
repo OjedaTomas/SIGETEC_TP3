@@ -1,0 +1,6 @@
+# Copiar este archivo como: config/sigetec.properties
+# NO subir config/sigetec.properties a GitHub.
+# Cambiar usuario y contraseña por los configurados en MySQL.
+db.url=jdbc:mysql://localhost:3306/sigetec?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Argentina/Buenos_Aires
+db.usuario=sigetec_app
+db.clave=COLOCA_AQUI_TU_CLAVE

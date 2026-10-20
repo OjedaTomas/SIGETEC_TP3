@@ -1,0 +1,18 @@
+digraph DER {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.47", ranksep="0.78", fontname="Arial"];
+  node [shape=record, fontname="Arial", fontsize=10, style="rounded,filled", color="#357f5c", fillcolor="#eef8f2"];
+  edge [color="#445c51", fontname="Arial", fontsize=10, arrowsize=0.7];
+  cliente [label="{CLIENTES|PK id_cliente\lnombre\ltelefono\lemail\lactivo\l}"];
+  tecnico [label="{TECNICOS|PK id_tecnico\lnombre\lespecialidad\lactivo\l}"];
+  tipo [label="{TIPOS_SERVICIO|PK codigo\lnombre\l}"];
+  ticket [label="{TICKETS|PK id_ticket\lFK id_cliente\lFK tipo_codigo\ldescripcion\ldetalle_especifico\lprioridad\lestado\l}"];
+  orden [label="{ORDENES_TRABAJO|PK id_orden\lFK id_ticket (UNIQUE)\lfecha_programada\lestado\l}"];
+  asignacion [label="{ASIGNACIONES|PK/FK id_orden\lPK/FK id_tecnico\lfecha_asignacion\l}"];
+  intervencion [label="{INTERVENCIONES|PK id_intervencion\lFK (id_orden,id_tecnico)\ldescripcion\lresultado\lfecha_registro\l}"];
+  cliente -> ticket [label="1 a N"];
+  tipo -> ticket [label="1 a N"];
+  ticket -> orden [label="1 a 0..1"];
+  orden -> asignacion [label="1 a N"];
+  tecnico -> asignacion [label="1 a N"];
+  asignacion -> intervencion [label="1 a N"];
+}

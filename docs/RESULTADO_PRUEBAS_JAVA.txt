@@ -1,0 +1,18 @@
+OK - Constructor y atributos encapsulados de Cliente
+OK - No acepta clientes sin nombre
+OK - No acepta clientes sin tel?fono
+OK - Constructor de T?cnico
+OK - Herencia TicketCctv
+OK - Herencia TicketSoporteIt
+OK - Herencia TicketGeneral
+OK - Polimorfismo CCTV
+OK - Polimorfismo Soporte IT
+OK - Polimorfismo para alarmas
+OK - No acepta tickets sin descripci?n
+OK - No acepta intervenci?n sin tarea
+OK - Constructor de Intervenci?n
+OK - Algoritmo de ordenaci?n por prioridad
+OK - Algoritmo de b?squeda por ID
+OK - Resumen del ticket muestra datos correctos
+
+PRUEBAS APROBADAS: 16
